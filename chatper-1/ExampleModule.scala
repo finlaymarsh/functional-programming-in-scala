@@ -23,11 +23,12 @@ object ExampleModule { // Declares a singleton object
     val msg = "The factorial value for %d is %d" // capable of type inference
     msg.format(x, factorial(x))
   }
+
   def main(args: Array[String]): Unit = { // Unit serves the same purpose as void in Java
     println(formatAbs(-42))
     println(formatFactorial(6))
   }
 }
 
-// Can be compiled using command `scalac example.scala`
+// Can be compiled using command `scalac ExampleModule.scala`
 // Can be ran using command `scala ExampleModule`
